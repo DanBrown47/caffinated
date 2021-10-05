@@ -6,6 +6,7 @@ import argparse
 
 #  Import src libs
 from src.engine import API_Fetcher
+from src.filegen import FileGen
 
 def check_args():
     """
@@ -34,4 +35,6 @@ def check_args():
 
 # Entry point python
 if __name__ == "__main__":
+    fileCheck = FileGen()
+    fileCheck.isFile()
     check_args()     

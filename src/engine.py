@@ -1,3 +1,8 @@
+"""
+Caffinated Event, Core Snippet
+
+Author : Danwand NS    github.com/DanBrown47
+"""
 from typing import Set
 import requests 
 
