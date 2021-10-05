@@ -7,6 +7,10 @@ import argparse
 #  Import src libs
 from src.engine import API_Fetcher
 from src.filegen import FileGen
+from src.io import IO
+# Global Variables
+
+PATH = "./godown/buff.txt"
 
 def check_args():
     """
@@ -26,15 +30,13 @@ def check_args():
     if parser.parse_args().entrypoint:
         api_url = parser.parse_args().entrypoint
         fetcher = API_Fetcher(api_url)
-        fetcher.request()
+        response = fetcher.request()
         
-        
-    
-
-
+        io = IO(PATH, response)
+        io.entrypoint()
 
 # Entry point python
 if __name__ == "__main__":
-    fileCheck = FileGen()
+    fileCheck = FileGen(PATH)
     fileCheck.isFile()
     check_args()     

@@ -7,14 +7,13 @@ verify if the buffer file is present, if not generates one
 as temp storage of the file
 """
 
-PATH = "./godown/buff.txt"
 class FileGen:
     """
     Checks if the file is present if not generate
     """
 
-    def __init__(self) -> None:
-        self.path = PATH
+    def __init__(self, path) -> None:
+        self.path = path
         pass
     
     def generate(self) -> None:

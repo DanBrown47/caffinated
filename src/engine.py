@@ -20,9 +20,9 @@ class API_Fetcher():
         The requests are taken, awaits resposes from the
         server and returned as JSON string
         """
-        response = requests.get(self.url)
+        response = requests.get(self.url).json()
         #  Check if 200 else expection
-        return response.json()
+        return response
         
 
         
