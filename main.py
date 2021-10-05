@@ -1,9 +1,11 @@
 from __future__ import print_function
-# import the necessary packages
-
+# Import the necessary packages
 import os
 import sys
 import argparse
+
+#  Import src libs
+from src.engine import API_Fetcher
 
 def check_args():
     """
@@ -22,6 +24,9 @@ def check_args():
 
     if parser.parse_args().entrypoint:
         api_url = parser.parse_args().entrypoint
+        fetcher = API_Fetcher(api_url)
+        fetcher.request()
+        
         
     
 
