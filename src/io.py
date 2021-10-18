@@ -46,7 +46,7 @@ class IO():
             file.close()
 
         except Exception as e:
-            print("Erorr on writing to file : " + str(e))
+            print("Error on writing to file : " + str(e))
 
         
 
