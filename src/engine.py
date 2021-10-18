@@ -1,15 +1,16 @@
 """
 Caffinated Event, Core Snippet
-
-Author : Danwand NS    github.com/DanBrown47
+Author : Danwand NS -github.com/DanBrown47
 """
 from typing import Set
 import requests 
+import numpy 
 
 class API_Fetcher():
     """
     The class sends a GET Request to the API to fetch and return the 
-    content to a JSON
+    
+    content to a JSON input
     """
 
     def __init__(self, api_url:'str') -> None:
