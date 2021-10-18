@@ -10,7 +10,7 @@ from src.filegen import FileGen
 from src.io import IO
 # Global Variables
 
-PATH = "./godown/buff.txt"
+PATH = "/home/USER/godown/buff.txt"
 
 def check_args():
     """
